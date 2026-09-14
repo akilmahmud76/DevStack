@@ -1,42 +1,3 @@
-# 🧱 Dev Stack — Build Your Ideal Development Stack
-
-Dev Stack is a browser-based tool for developers who are choosing what to build
-their next project with. Instead of googling "React vs Vue" for the tenth
-time, you browse a curated catalog of frontend, backend, database, language,
-styling, and DevOps tools side by side, and collect the ones you want into a
-personal "stack" — a shortlist you can review, adjust, and clear at any time.
-
-## 🛠️ Built With
-
-- **React 19** (function components + hooks)
-- **Vite** — dev server and build tool
-- **Tailwind CSS v4** — utility-first styling via the `@tailwindcss/vite` plugin
-- **React-Toastify** — toast notifications for stack actions
-- **JSON** — local technology dataset, loaded at runtime with `fetch`
-
-## ✨ Features
-
-1. **Build-your-own stack, one click at a time.** Every technology card has an
-   "Add to Stack" button; once added, the button locks to "✓ Added to Stack"
-   and the item appears in the "Your Stack" sidebar with its icon, name, and
-   category, so you always know what's already picked.
-2. **Guardrails baked into the interaction.** You can't add the same
-   technology twice (you get a warning toast instead), removing one item only
-   removes that item, and "Remove All" clears the whole stack in one click —
-   all confirmed with react-toastify notifications.
-3. **Fully responsive, data-driven layout.** The technology grid reflows from
-   3 columns on desktop to 2 on tablet to 1 on mobile, the navbar collapses
-   into a hamburger menu on small screens, and every technology is loaded
-   from a local JSON file (not hardcoded) with a real loading state while it
-   fetches.
-
-## 🚀 Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
 ## 📖 React Q&A
 
 **1. What is JSX, and why is it used in React?**
@@ -92,7 +53,4 @@ down to `TechCard` as the `onAdd` prop, and when a card's button is clicked,
 it calls `onAdd(tech)`, which runs the parent's logic and updates state that
 lives in `TechGrid`.
 
-## 📤 Submission
 
-- GitHub Repository Link:
-- Live Site Link:
