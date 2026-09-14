@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-8">
-        {/* Mobile: hamburger on the left */}
+       
         <button
           type="button"
           onClick={() => setIsMenuOpen((open) => !open)}
@@ -22,12 +22,12 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Brand logo -- centered on mobile, left on desktop */}
+       
         <a href="#top" className="flex items-center md:mr-8">
           <img src={logo} alt="Dev Stack" className="h-8 w-auto" />
         </a>
 
-        {/* Desktop nav links -- centered */}
+        
         <nav className="hidden flex-1 items-center justify-center gap-8 md:flex">
           {NAV_LINKS.map((link, index) => (
             <a
@@ -44,7 +44,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Right: auth actions -- visible on both mobile and desktop */}
+        
         <div className="flex items-center gap-2 md:gap-4">
           <button className="text-xs font-medium text-slate-700 hover:text-slate-900 sm:text-sm">
             Sign In
@@ -55,7 +55,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile dropdown menu */}
+      
       {isMenuOpen && (
         <nav className="flex flex-col gap-1 border-t border-slate-200 bg-white px-5 py-3 md:hidden">
           {NAV_LINKS.map((link, index) => (
